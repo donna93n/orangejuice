@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>-->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="css/bootstrap-switch.css">
+<link href="css/style.css" rel="stylesheet" media="screen">
+
+</head>
+
+<body onload="run()">
+	<div id="title-bar">
+	
+		<table style="width:100%">
+			<tr>
+			<td>
+				<div id="backContainer">
+				<img id="back" class="imgBtn" src="img/chevron-left.png"/>
+				</div>
+			</td>
+			
+			<td class="title">
+				<h1 id="selectActTitle">Select Activity</h1>
+			</td>
+				
+			<td class="menuCol">
+				<div class="btn-group menu">
+				<button class="btn"  data-toggle="dropdown" id="menuBtn">
+				<i class="icon-th-list"></i>
+				</button>
+					<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu">
+						<li><a tabindex="-1" href="/">Home</a></li>
+						<li><a tabindex="-1" href="/help">Help</a></li>
+						<li><a tabindex="-1" href="/login">Sign out</a></li>
+					 </ul>
+				</div>
+				
+			</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="blocknotificationbox">
+
+		<div style="width:200px;height:150px;line-height:1em;overflow-y:scroll;overflow-x:auto;padding:5px;background-color:#FF8000;color:#714D03;border:4px double #DEBB07;">
+			This 'div' element uses 'overflow:scroll' to create scrollbars whenever the contents of the 'div' become too large. 
+			THISDAFSADFKSALDJGKSADHGLKHSDAKGHASDLKGHKSAHGKSAGLKSAKGHDLKGHLASKHGLKSAHGLKASHGLK
+		</div>
+
+		<div style="height:150px;width:250px;overflow:scroll;font:25px/35px cursive;background:url('http://static3.depositphotos.com/1007307/244/i/950/depositphotos_2443038-Frame-of-cut-orange-fruit.jpg');border:9px outset #FF8000">This is a test of other things, just trying to see how big the screen is.
+			asdkjflsadglkjhsdglkjhasdlkghsakjhglksadhglkjsahglkjsahglkjsahglkahsjgasl
+</div>
+		
+		
+	</div>
+
+
+
+
+
+
+    <script type="text/javascript">
+	function run(){
+		$('.btn').button();
+		$('#back').click(function() {
+			window.history.back();
+		});
+	}
+    </script>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+</body>
+
+</html>
+

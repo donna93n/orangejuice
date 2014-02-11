@@ -1,0 +1,235 @@
+h1{
+    font-size: 35px;
+	/*float: left; */
+	text-align: center;
+}
+ h2{
+	padding-top: 20px;
+	font-size: 35px;
+	padding-bottom: 20px;
+	text-align: center;
+ }
+ 
+#selectActTitle, #tmpTitle{
+	font-size: 25px;
+}
+
+.text{
+    font-size: 20px;
+	margin-top: 10px;
+}
+
+.smText{
+	font-size: 20px;
+}
+
+#title-bar{
+    margin-bottom: 15px;
+    border-bottom: 1px solid lightgrey;
+	width:100%;
+}
+
+.imgBtn{
+	cursor: pointer;
+}
+
+#header{
+	margin-left:auto; 
+	margin-right:auto;
+}
+
+p{
+    padding-top: 10px; 
+    padding-bottom: 5px; 
+    padding-right: 20px;
+}
+
+#switchContainer{
+	float: right;
+	height: 30px;
+	margin-top: 10px;
+}
+
+#selectActBtn{
+    margin-top: 5px;
+    clear: both;
+	width: 280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#selectBtnContainer{
+	clear: both;
+	text-align: center;
+}
+
+#offBtn{
+	width: 40px;
+    height: 30px;
+    padding-bottom: 5px;
+	margin-top: auto;
+}
+
+#menuBtn{
+    width: 40px;
+    height: 30px;
+    padding-bottom: 5px;
+	margin-top: auto;
+	float: right;
+}
+
+.menuCol{
+	width: 40px;
+}
+
+#homepg{
+	width: 100%;
+	clear:both;
+}
+
+body{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+#curActLabel{
+	float: left; 
+}
+
+#curAct{
+	float: left; 
+	font-weight: bold;
+}
+
+#back{
+	float:left;
+	width: 15px;
+	height: 25px;
+	margin-top: auto;
+	
+}
+
+.wideBtn{
+	width: 280px;
+}
+
+h2{
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
+
+.activities{
+	width: 280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#activityBtn{
+	float: left;
+	width: 200px;
+}
+
+#form-label{
+	margin-right: 5px; 
+}
+
+#actName{
+	width: 65%; 
+	float: right;
+	margin-bottom: 15px;
+	font-size: 17px;
+}
+
+.editBtn{
+	float: right; 
+	width: 60px;
+	height: 40px;
+}
+
+.labels{
+	float: left;
+}
+
+.editBtn{
+	float: right; 
+}
+
+.formBtn{
+	width: 42%;
+}
+
+.cancelBtn, .deleteBtn{
+	float: left;
+	margin-left: 20px;
+	
+}
+
+.saveBtn{
+	float: right; 
+	margin-right: 20px;
+	
+}
+
+.bottomrow{
+	width: 100%;
+	clear: both; 
+	position: absolute; 
+	bottom: 10px;
+	left: 0px;
+}
+
+#email, #pw{
+	height: 25px;
+	font-size: 15px;
+	width: 100%; 
+}
+
+#loginpg, #signuppg{
+	width:100%;
+	text-align: center
+}
+
+.loginpgBtn{
+	width: 75px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#email{
+	margin-bottom: 5px;
+}
+
+#pw{
+	margin-top: 5px;
+}
+
+.menu{
+	float:right;
+}
+
+li{
+	font-size: 16px;
+}
+
+.contactNames, .appNames{
+	font-size: 20px;
+	margin-top: auto;
+	margin-bottom: auto; 
+}
+
+#searchbar{
+	width: 95%; 
+}
+
+#checkboxes{
+	width: 20px; 
+	height: 20px;
+	float:right;
+}
+
+.instr{
+	padding-top: 0px; 
+	padding-bottom: 0px;
+	text-align: center;
+}
