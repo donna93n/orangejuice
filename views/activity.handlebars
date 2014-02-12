@@ -62,10 +62,13 @@
 			<button id="tmpSessBtn" class="btn btn-large btn-primary text wideBtn">Initiate Temp Session</button>
 		</div>
 		<h2>Activities</h2>
+		
+		{{#each activities}}
 		<div class="activities">
-			<button id="activityBtn" class="btn btn-large btn-default text">Activity1</button>
+			<button id="activityBtn" class="btn btn-large btn-default text">{{name}}</button>
 			<button id="editBtn" class="btn btn-large btn-default text">Edit</button>
 		</div>
+		{{/each}}
 	</div>
 
 
