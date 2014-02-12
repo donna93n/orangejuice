@@ -45,9 +45,11 @@
 		</div>-->
 		<p class="instr">Select contacts to allow calls/texts from</p>
 		<table id="contactsList" style="width: 100%;">
+		
+		{{#each contacts}}
 		<tr>
 		<td>
-			<p class="contactNames">Bob</p>
+			<p class="contactNames">{{name}}</p>
 		</td>
 		<td>
 			<div style="float: right;" class="btn-group" data-toggle="buttons-checkbox">
@@ -61,22 +63,8 @@
 		</td>
 		
 		</tr>
-		<tr>
-		<td>
-			<p class="contactNames">Food</p>
-		</td>
-		<td>
-			<div style="float: right;" class="btn-group" data-toggle="buttons-checkbox">
-			  <button type="button" class="btn">
-				<img src="img/call.png"/>
-			  </button>
-			  <button type="button" class="btn">
-				<i class="icon-comment"></i>
-			  </button>
-			</div>
-		</td>
+		{{/each}}
 		
-		</tr>
 		</table>
 		
 		<div class="bottomrow">
