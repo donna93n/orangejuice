@@ -97,6 +97,7 @@ body{
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 #curActLabel{
@@ -118,6 +119,10 @@ body{
 
 .wideBtn{
 	width: 280px;
+}
+
+.wideBoxes{
+	width: 95%;
 }
 
 h2{
@@ -189,7 +194,6 @@ h2{
 #email, #pw{
 	height: 25px;
 	font-size: 15px;
-	width: 100%; 
 }
 
 #loginpg, #signuppg{
@@ -235,8 +239,9 @@ li{
 	float:right;
 }
 
+
 .instr{
 	padding-top: 0px; 
 	padding-bottom: 0px;
-	text-align: center;
+	/*text-align: center;*/
 }
