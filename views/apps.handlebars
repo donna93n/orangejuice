@@ -42,9 +42,10 @@
 	<div id="contactspg" style="clear:both;">
 		<p class="instr">Select apps to block</p>
 		<table id="contactsList" style="width: 100%;">
+		{{#each apps}}
 		<tr>
 		<td>
-			<p class="appNames">Facebook</p>
+			<p class="appNames">{{appName}}</p>
 		</td>
 		<td>
 			<label class="checkbox">
@@ -53,16 +54,7 @@
 		</td>
 		
 		</tr>
-		<tr>
-		<td>
-			<p class="appNames">Gmail</p>
-		</td>
-		<td>
-			<label class="checkbox">
-			  <input id="checkboxes" type="checkbox" value="">  
-			</label>
-		</td>
-		</tr>
+		{{/each}}
 		</table>
 		
 		<div class="bottomrow">
