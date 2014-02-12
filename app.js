@@ -20,6 +20,7 @@ var apps =  require('./routes/apps');
 var contacts =  require('./routes/contacts');
 var apps =  require('./routes/apps');
 var blockednotifications = require('./routes/blockednotifications');
+var addAct =  require('./routes/addAct');
 
 var app = express();
 
@@ -55,6 +56,7 @@ app.get('/editActivity', editActivity.view);
 app.get('/contacts', contacts.view);
 app.get('/apps', apps.view);
 app.get('/blockednotifications', blockednotifications.view);
+app.get('/addAct', addAct.addActivity);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
