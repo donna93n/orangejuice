@@ -1,5 +1,5 @@
 {
-	"friends": [
+	"blocknotifications": [
 		{
 			"name": "Doug Engelbart",
 			"blocked": " Blocked a phone call from ",
@@ -7,7 +7,7 @@
 		},
 		{
 			"name": "Allen Newell",
-			"description": " Blocked a text message from ",
+			"blocked": " Blocked a text message from ",
 			"time": "10 minutes ago"
 		}
 	]

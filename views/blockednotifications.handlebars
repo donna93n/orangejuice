@@ -42,17 +42,17 @@
 	</div>
 
 	<div id="blocknotificationbox">
-		<div style="height:350px;width:250px;overflow:scroll;font:15px/20px cursive;background:url('http://static3.depositphotos.com/1007307/244/i/950/depositphotos_2443038-Frame-of-cut-orange-fruit.jpg');border:9px outset #FF8000">
-</div>
-	{{#each blockednotification.friends}}
-	<div>
-	<p>{{time}}</p>
-	<p>{{name}}{{block}}</p>
+		<div style="height:350px;width:250px;overflow:scroll;font:20px cursive;background:url('http://static3.depositphotos.com/1007307/244/i/950/depositphotos_2443038-Frame-of-cut-orange-fruit.jpg');border:9px outset #FF8000">
+		
+	{{#each blocknotifications}}
+	<div class = "blocknotifications">
+	<p style="background-color:red;" class = "pNotification">{{time}}</p>
+	<p class = "pNotification">{{blocked}}{{name}}</p>
 	</div>
-	{{/each}	
+	{{/each}}	
 		
 </div>
-
+</div>
 
 
 
