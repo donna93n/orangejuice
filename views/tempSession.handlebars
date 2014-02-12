@@ -40,7 +40,7 @@
 	</div>
 
 	<div id="addpg" style="clear:both;">
-		<p>Add Description here</p>
+		<p class="instr">Create a temporary activity that will not be saved after use</p>
 		<div style="width: 100%; clear: both;">
 			<p class="labels smText">Allowed Contacts</p>
 			<button id="editContacts" class="btn btn-default editBtn">Edit</button>
@@ -76,6 +76,10 @@
 		
 		$('#editApps').click(function() {
 			window.location= '/apps';
+		});
+		
+		$('.saveBtn').click(function() {
+			window.location= '/';
 		});
 
 

@@ -33,7 +33,7 @@
 			</td>
 			
 			<td class="title">
-				<h1>Add Activity</h1>
+				<h1>Edit Activity</h1>
 			</td>
 				
 			<td class="menuCol">
@@ -54,7 +54,7 @@
 	</div>
 
 	<div id="addpg" style="clear:both;">
-		<form class="form-horizontal" role="form" method = "get" action = "/???">
+		<form class="form-horizontal" role="form" method = "get" action = "/addAct">
 			<div class="form-group">
 				<label id="form-label" for="actName" class="col-sm-2 control-label smText">Activity:</label>
 				<div class="col-sm-10">
@@ -64,6 +64,10 @@
 			<!--<div class="input-group input-group-lg">
 				<input type="text" class="form-control input-lg" placeholder="efsg">
 			</div>-->
+			<div class="bottomrow">
+				<button id="delete" class="btn btn-default btn-large formBtn deleteBtn">Delete</button>
+				<button class="btn btn-primary btn-large formBtn saveBtn">Save</button>
+			</div>
 		</form>
 		
 		<div style="width: 100%; clear: both;">
@@ -76,11 +80,7 @@
 			<button id="editApps" class="btn btn-default editBtn">Edit</button>
 		</div>
 		
-		
-		<div class="bottomrow">
-			<button id="delete" class="btn btn-default btn-large formBtn deleteBtn">Delete</button>
-			<button class="btn btn-primary btn-large formBtn saveBtn">Save</button>
-		</div>
+	
 		
 	
 	</div>
@@ -89,7 +89,7 @@
     <script type="text/javascript">
 	function run(){
 		$('.btn').button();
-		$('#delete').click(function() {
+		$('.deleteBtn').click(function() {
 			window.location= '/activity';
 		});
 		
@@ -99,6 +99,10 @@
 		
 		$('#editApps').click(function() {
 			window.location= '/apps';
+		});
+		
+		$('.saveBtn').click(function() {
+			window.location= '/activity';
 		});
 		
 	}

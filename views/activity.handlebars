@@ -65,8 +65,9 @@
 		
 		{{#each activities}}
 		<div class="activities">
-			<button id="activityBtn" class="btn btn-large btn-default text">{{name}}</button>
-			<button id="editBtn" class="btn btn-large btn-default text">Edit</button>
+			<!--id="activityBtn"--> 
+			<button class="btn btn-large btn-default text activityBtn">{{name}}</button>
+			<button id="editBtn" class="btn btn-large btn-default text editActBtn">Edit</button>
 		</div>
 		{{/each}}
 	</div>
@@ -79,19 +80,20 @@
 			window.location= '/addActivity';
 		});
 		$('#back').click(function() {
-			window.history.back();		
+			//window.history.back();		
+			window.location='/';
 		});
 
 		$('#tmpSessBtn').click(function() {
 			window.location= '/tempSession';
 		});
 		
-		$("#activityBtn").click(function() {
+		$(".activityBtn").click(function() {
 			window.location='/'; 
 			//add functionality later to change act. name on home pg
 		});
 	
-		$('#editBtn').click(function() {
+		$('.editActBtn').click(function() {
 			window.location='/editActivity';	
 		});
 	}

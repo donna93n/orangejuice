@@ -131,10 +131,11 @@ h2{
 	margin-right: auto;
 }
 
-#activityBtn{
+.activityBtn{
 	float: left;
 	width: 200px;
 }
+
 
 #form-label{
 	margin-right: 5px; 
@@ -193,7 +194,7 @@ h2{
 
 #loginpg, #signuppg{
 	width:100%;
-	text-align: center
+	text-align: center;
 }
 
 .loginpgBtn{
