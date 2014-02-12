@@ -91,19 +91,33 @@
 			$("#curAct").text("None");
 		}
 		
+		
 		//event handler 
 		$("#switch").on('switch-change',function(e,data){
-			//console.log("pressed");
+			console.log("pressed");
 			var on = data.value; 
 			
 			if(on){
 				$("#notifLink").css("display", "inline");
+				//$("#curAct").text("Some Activity");
 			}
 			else{
 				$("#notifLink").css("display", "none");
 				$("#curAct").text("None");
 			}
 		});
+		
+		var state = $('#switch').bootstrapSwitch('state');
+		console.log(state);
+		if (state){
+			console.log("tis on");
+			$("#notifLink").css("display", "inline");
+			$("#curAct").text("Some Activity");
+		}
+		else{
+			$("#notifLink").css("display", "none");
+			$("#curAct").text("None");
+		}
 	}
 	
 	
