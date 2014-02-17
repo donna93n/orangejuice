@@ -89,6 +89,7 @@
 		});
 		
 		$(".activityBtn").click(function() {
+			localStorage.setItem('activityName', $(this).text());
 			window.location='/'; 
 			//add functionality later to change act. name on home pg
 		});
@@ -98,6 +99,8 @@
 		});
 	}
     </script>
+	
+
 
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
