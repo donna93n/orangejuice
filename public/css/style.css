@@ -117,7 +117,7 @@ body{
 	
 }
 
-.wideBtn{
+.wideBtn, #doneBtn, #notifLink{
 	width: 280px;
 }
 
