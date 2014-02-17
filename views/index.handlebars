@@ -83,8 +83,17 @@
 		$('#selectActBtn').click(function() {
 			window.location= '/activity';
 		});
-		
 		$("#notifLink").css("display", "none");
+		
+		
+		var activityName = localStorage.getItem('activityName');
+		if(activityName == null)
+		{
+			activityName = "None";
+		}
+		$("#curAct").text(activityName);
+		
+		/*
 		$("#switch").bootstrapSwitch();
 		
 		if(!document.getElementById("switch").checked){
@@ -117,7 +126,7 @@
 		else{
 			$("#notifLink").css("display", "none");
 			$("#curAct").text("None");
-		}
+		}*/
 	}
 	
 
