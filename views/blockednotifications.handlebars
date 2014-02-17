@@ -21,7 +21,7 @@
 			</td>
 			
 			<td class="title">
-				<h1 id="selectActTitle">Select Activity</h1>
+				<h1 id="selectActTitle">Blocked Notifications</h1>
 			</td>
 				
 			<td class="menuCol">
@@ -42,11 +42,13 @@
 	</div>
 
 	<div id="blocknotificationbox">
-		<div style="height:350px;width:250px;overflow:scroll;font:20px cursive;background:url('http://static3.depositphotos.com/1007307/244/i/950/depositphotos_2443038-Frame-of-cut-orange-fruit.jpg');border:9px outset #FF8000">
+		<!-- <div style="height:350px;width:250px;overflow:scroll;font:20px cursive;background:url('../img/');border:9px outset #000000"> -->
+
+<div style="width:350px;height:150px;line-height:3em;font:30px;overflow:auto;padding:5px;">
 		
 	{{#each blocknotifications}}
 	<div class = "blocknotifications">
-	<p style="background-color:red;" class = "pNotification">{{time}}</p>
+	<p style="background-color:orange;" class = "pNotification">{{time}}</p>
 	<p class = "pNotification">{{blocked}}{{name}}</p>
 	</div>
 	{{/each}}	
