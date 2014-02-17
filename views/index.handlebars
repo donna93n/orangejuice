@@ -56,19 +56,15 @@
 	
 
 	<div id="homepg">
-		<p style="float:left;" class="text">Focus Mode</p>
-		<!--<div style="float: right;" class="btn-group" data-toggle="buttons-radio">
-		    <button type="button" id="selectBtn" class="btn btn-primary text">On</button>
-		    <button type="button" class="btn btn-primary text">Off</button>
-	    	</div>-->
+		<!--<p style="float:left;" class="text">Focus Mode</p>
 			<div id="switchContainer">
 				<input type="checkbox" id="switch" data-animated="false" data-on="success" data-off="danger">
-			</div>
+			</div>-->
 		<div id="selectBtnContainer">
 		<button id="selectActBtn" class="btn btn-large text wideBtn">Select Activity</button>
 		</div>
 
-	    <p class="text"id="curActLabel">Current Activity: </p>
+	    <p class="text"id="curActLabel">Current Activity: {{session.currAct}} </p>
 		<p class="text" id="curAct"></p>
 
 		<div style="clear: both;">
@@ -85,9 +81,12 @@
 		});
 		
 		$("#notifLink").css("display", "none");
-		$("#switch").bootstrapSwitch();
 		
-		if(!document.getElementById("switch").checked){
+		
+		
+		//$("#switch").bootstrapSwitch();
+		
+		/*if(!document.getElementById("switch").checked){
 			$("#curAct").text("None");
 		}
 		
@@ -117,7 +116,7 @@
 		else{
 			$("#notifLink").css("display", "none");
 			$("#curAct").text("None");
-		}
+		}*/
 	}
 	
 
