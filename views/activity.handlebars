@@ -64,10 +64,10 @@
 		<h2>Activities</h2>
 		
 		{{#each activities}}
-		<div class="activities">
+		<div class="activities" id="{{name}}_{{@index}}">
 			<!--id="activityBtn"--> 
 			<button class="btn btn-large btn-default text activityBtn">{{name}}</button>
-			<button id="editBtn" class="btn btn-large btn-default text editActBtn">Edit</button>
+			<button id="{{name}}_editBtn_{{@index}}" class="btn btn-large btn-default text editActBtn">Edit</button>
 		</div>
 		{{/each}}
 	</div>
@@ -95,6 +95,10 @@
 		});
 	
 		$('.editActBtn').click(function() {
+			var name = this.id;
+			var str = name.split("_");
+			localStorage.setItem('editBtnID', this.id);
+			localStorage.setItem('actName_edit', str[0]);
 			window.location='/editActivity';	
 		});
 	}
