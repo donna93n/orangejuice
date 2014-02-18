@@ -48,6 +48,7 @@ p{
     padding-top: 0px; 
     padding-bottom: 0px; 
     padding-right: 0px;
+    line-height: 20px;
 }
 
 #switchContainer{
@@ -119,7 +120,7 @@ body{
 	
 }
 
-.wideBtn{
+.wideBtn, #doneBtn, #notifLink{
 	width: 280px;
 }
 
@@ -193,7 +194,7 @@ h2{
 	left: 0px;
 }
 
-#email, #pw{
+#email, #pw, #Name{
 	height: 25px;
 	font-size: 15px;
 }
@@ -204,17 +205,38 @@ h2{
 }
 
 .loginpgBtn{
-	width: 75px;
-	margin-top: 5px;
+	width: 100px;
+	margin-top: 15px;
 	margin-bottom: 5px;
+}
+
+#loginBtnRow{
+	width: 100%;
+	text-align: center; 
+}
+
+#login, #submitSignup{
+	margin-right:10px;
+}
+
+#signup, #cancelSignup{
+	margin-left: 10px;
+}	
+
+#Name{
+	margin-bottom: 20px;
 }
 
 #email{
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 #pw{
-	margin-top: 5px;
+	margin-top: 10px;
+}
+
+#signupForm{
+	margin-bottom: 0px;
 }
 
 .menu{
@@ -222,7 +244,8 @@ h2{
 }
 
 li{
-	font-size: 16px;
+	font-size: 20px;
+	heigth: 30px; 
 }
 
 .contactNames, .appNames{
@@ -246,6 +269,7 @@ li{
 	padding-top: 0px; 
 	padding-bottom: 0px;
 	/*text-align: center;*/
+<<<<<<< HEAD
 }
 
 #logo{
@@ -254,3 +278,6 @@ li{
 	margin-right:auto;
 	margin-left:auto;
 }
+=======
+}
+>>>>>>> 1f3332ad3ae79add1f7e3730e257de0874be2776

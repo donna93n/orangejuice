@@ -32,11 +32,11 @@
 	
 	<div id="signuppg">
 	
-		<form>
+		<form id="signupForm" ACTION = "" METHOD = "GET">
 		<fieldset>
 			
 			<div>
-				<input type="text" class="wideBoxes" id="pw" placeholder="Name">
+				<input type="text" class="wideBoxes" id="Name" placeholder="Name">
 			</div>
 			
 			<div>
@@ -49,9 +49,10 @@
 		</fieldset>
 		</form>
 		
-		<button class="loginpgBtn btn" id="submitSignup" type="button">Submit</button>
-		<button class="loginpgBtn btn" id="cancelSignup" type="button">Cancel</button>
-
+		<div id="loginBtnRow">
+			<button class="loginpgBtn btn btn-large" id="submitSignup" type="button">Submit</button>
+			<button class="loginpgBtn btn btn-large" id="cancelSignup" type="button">Cancel</button>
+		</div>
 
 	</div>
 
@@ -63,12 +64,23 @@
 			window.history.back(); 
 		})
 		$('#submitSignup').click(function() {
+			if (Name.value === "" || email.value === "" || pw.value === "")
+			{
+				alert("Please enter in a name, email, and password");
+			}
+			else if ((email.value).search("@") == -1)
+			{
+				alert("Please enter a valid email");
+			}
+			else{
 			window.location= '/';
+			}
 		});
 		
 		$('#cancelSignup').click(function() {
 			window.location= '/login';
 		});
+		
 	}
 	
 	

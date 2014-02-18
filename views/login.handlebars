@@ -26,11 +26,9 @@
 				<input type="password" class="wideBoxes" id="pw" placeholder="Password">
 			</div>
 			
-			<div>
-				<button class="loginpgBtn btn" id="login" type="button">Login</button>
-			</div>
-			<div>
-				<button class="loginpgBtn btn" id="signup" type="button">Signup</button>
+			<div id="loginBtnRow">
+				<button class="loginpgBtn btn btn-large" id="login" type="button">Login</button>
+				<button class="loginpgBtn btn btn-large" id="signup" type="button">Signup</button>
 			</div>
 			
 		</fieldset>
@@ -43,7 +41,17 @@
 	function run(){
 		$('.btn').button();
 		$('#login').click(function() {
+			if (email.value === "" || pw.value === "")
+			{
+				alert("Please enter in a email and password");
+			}
+			else if ((email.value).search("@") == -1)
+			{
+				alert("Please enter a valid email address");
+			}
+			else{
 			window.location= '/';
+			}
 		});
 		
 		$('#signup').click(function() {
