@@ -32,11 +32,11 @@
 	
 	<div id="signuppg">
 	
-		<form>
+		<form ACTION = "" METHOD = "GET">
 		<fieldset>
 			
 			<div>
-				<input type="text" class="wideBoxes" id="pw" placeholder="Name">
+				<input type="text" class="wideBoxes" id="Name" placeholder="Name">
 			</div>
 			
 			<div>
@@ -63,12 +63,23 @@
 			window.history.back(); 
 		})
 		$('#submitSignup').click(function() {
+			if (Name.value === "" || email.value === "" || pw.value === "")
+			{
+				alert("Please enter in a name, email, and password");
+			}
+			else if ((email.value).search("@") == -1)
+			{
+				alert("Please enter a valid email");
+			}
+			else{
 			window.location= '/';
+			}
 		});
 		
 		$('#cancelSignup').click(function() {
 			window.location= '/login';
 		});
+		
 	}
 	
 	
