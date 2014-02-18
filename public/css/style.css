@@ -104,7 +104,12 @@ body{
 
 
 #curActLabel{
-	float: left; 
+	/*float: left; */
+}
+
+#curAct{
+	margin-top: 0px;
+	padding-top: 0px;
 }
 
 #curAct{
