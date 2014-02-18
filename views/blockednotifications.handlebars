@@ -44,12 +44,13 @@
 	<div id="blocknotificationbox">
 		<!-- <div style="height:350px;width:250px;overflow:scroll;font:20px cursive;background:url('../img/');border:9px outset #000000"> -->
 
-<div style="width:350px;height:150px;line-height:3em;font:30px;overflow:auto;padding:5px;">
+<div style="width:350px;height:250px;line-height:3em;font:40px;background:url('../img/wrinkledpaper.jpeg');overflow:auto;">
 		
 	{{#each blocknotifications}}
 	<div class = "blocknotifications">
-	<p style="background-color:orange;" class = "pNotification">{{time}}</p>
-	<p class = "pNotification">{{blocked}}{{name}}</p>
+	<p style="font-size:20px;" class = "pNotification">{{blocked}}</p>
+	<p style="font-size:17px;float:left;" class = "pNotification">{{name}}</p>
+	<p style="font-size:10px;text-align: right;padding-bottom:10px;" class = "pNotification">{{time}}</p>
 	</div>
 	{{/each}}	
 		
