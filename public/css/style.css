@@ -274,7 +274,6 @@ li{
 	padding-top: 0px; 
 	padding-bottom: 0px;
 	/*text-align: center;*/
-<<<<<<< HEAD
 }
 
 #logo{
@@ -283,6 +282,14 @@ li{
 	margin-right:auto;
 	margin-left:auto;
 }
-=======
+
+#contactsTab{
+	width: 48%;
+	text-align: center; 
 }
->>>>>>> 1f3332ad3ae79add1f7e3730e257de0874be2776
+
+#appsTab{
+	width: 52%;
+	float:right;
+}
+
