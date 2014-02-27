@@ -104,14 +104,13 @@
 		$("#curAct").text(activityName);
 		
 		$("#doneBtn").click(function() {
+			window.location='/blockednotifications';
 			localStorage.removeItem('activityName');
-			$("#notifLink").css("display", "none");
+			/*$("#notifLink").css("display", "none");
 			//$("#selectActBtn").text("Select Activity");
 			$("#selectActBtn").css("display", "inline");
 			$("#curAct").text("None");
-			$("#doneBtn").hide(); 
-			window.location='/blockednotifications';
-			
+			$("#doneBtn").hide(); */
 		});
 		
 		/*
