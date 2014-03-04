@@ -58,7 +58,7 @@ app.get('/contacts', contacts.view);
 app.get('/apps', apps.view);
 app.get('/blockednotifications', blockednotifications.view);
 app.get('/addAct', addAct.addActivity);
-app.get('/editActivity2', editActivity2.view);
+app.get('/editActivity2', editActivity.view2); //editActivity2.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
