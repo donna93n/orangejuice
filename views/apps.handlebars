@@ -56,7 +56,9 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 	</div>
 
 	<div id="contactspg" style="clear:both;">
-		<p class="instr">Select apps to block</p>
+		<div id="appsHeader">
+			<p id="appInstr" class="instr">Select apps to block</p>
+		</div>
 		<table id="contactsList" style="width: 100%;">
 		{{#each apps}}
 		<tr>

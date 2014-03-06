@@ -28,13 +28,13 @@
 		<table style="width:100%">
 			<tr>
 			<td>
-				<div id="backContainer">
+				<!--<div id="backContainer">
 				<img id="back" class="imgBtn" src="img/chevron-left.png"/>
-				</div>
+				</div>-->
 			</td>
 			
 			<td class="title">
-				<h1 id="selectActTitle">Select Activity</h1>
+				<h1>Home</h1>
 			</td>
 				
 			<td class="menuCol">
@@ -66,7 +66,7 @@
 		{{#each activities}}
 		<div class="activities" id="{{name}}_{{@index}}">
 			<!--id="activityBtn"--> 
-			<button class="btn btn-large btn-default text activityBtn">{{name}}</button>
+			<button class="btn btn-large btn-default text activityBtn btn-info">{{name}}</button>
 			<button id="{{name}}_editBtn_{{@index}}" class="btn btn-large btn-default text editActBtn">Edit</button>
 		</div>
 		{{/each}}
@@ -79,10 +79,10 @@
 		$('#addActBtn').click(function() {
 			window.location= '/addActivity';
 		});
-		$('#back').click(function() {
+		/*$('#back').click(function() {
 			//window.history.back();		
 			window.location='/';
-		});
+		});*/
 
 		$('#tmpSessBtn').click(function() {
 			window.location= '/tempSession';
@@ -90,7 +90,7 @@
 		
 		$(".activityBtn").click(function() {
 			localStorage.setItem('activityName', $(this).text());
-			window.location='/'; 
+			window.location='/focus'; 
 			//add functionality later to change act. name on home pg
 		});
 	

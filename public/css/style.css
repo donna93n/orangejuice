@@ -48,7 +48,7 @@ p{
     padding-top: 0px; 
     padding-bottom: 0px; 
     padding-right: 0px;
-    line-height: 20px;
+    line-height: 5px;
 }
 
 #switchContainer{
@@ -304,5 +304,18 @@ li{
 #agreement{
 	width: 20px; 
 	height: 20px;
+}
+
+.btn-info{
+	background-image: linear-gradient(to bottom, #B0DAF1 ,#59BCD8); 
+}
+
+.btn-info:hover{
+	color: #ffffff;
+	background-color: #59BCD8;
+}
+
+.category{
+	font-size:22px;
 }
 

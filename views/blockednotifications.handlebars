@@ -46,10 +46,29 @@
 
 <div style="height:250px;line-height:3em;font:40px;background:url('../img/wrinkledpaper.jpeg');overflow:auto;">
 		
-	{{#each blocknotifications}}
+	<p class="category">Calls:</p>
+	{{#each calls}}
 	<div class = "blocknotifications">
-	<p style="font-size:20px;" class = "pNotification">{{blocked}}</p>
+	<!--<p style="font-size:20px;" class = "pNotification">{{blocked}}</p>-->
 	<p style="font-size:17px;float:left;" class = "pNotification">{{name}}</p>
+	<p style="font-size:10px;text-align: right;padding-bottom:10px;" class = "pNotification">{{time}}</p>
+	</div>
+	{{/each}}	
+	
+	<p class="category">Texts:</p>
+	{{#each texts}}
+	<div class = "blocknotifications">
+	<!--<p style="font-size:20px;" class = "pNotification">{{blocked}}</p>-->
+	<p style="font-size:17px;float:left;" class = "pNotification">{{name}}</p>
+	<p style="font-size:10px;text-align: right;padding-bottom:10px;" class = "pNotification">{{time}}</p>
+	</div>
+	{{/each}}	
+	
+	<p class="category">Notifications:</p>
+	{{#each notifications}}
+	<div class = "blocknotifications">
+	<!--<p style="font-size:20px;" class = "pNotification">{{blocked}}</p>-->
+	<p style="font-size:17px;float:left;" class = "pNotification">{{app}}</p>
 	<p style="font-size:10px;text-align: right;padding-bottom:10px;" class = "pNotification">{{time}}</p>
 	</div>
 	{{/each}}	
